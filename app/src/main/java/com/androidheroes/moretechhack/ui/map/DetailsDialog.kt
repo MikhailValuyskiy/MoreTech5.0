@@ -32,7 +32,8 @@ class ConfirmationDialog(
         contentView.rootView.findViewById<TextView>(R.id. bank_availability).text = Html.fromHtml("Загрузка: <b>${bankAddress.getAvailability(12).title}</b>")
 
         contentView.rootView.findViewById<MaterialButton>(R.id. que).setOnClickListener {
-            Snackbar.make(contentView.rootView, "Вы успешно встали в очередь в отделение, ваш номер 5, время ожидания 3 минуты", Snackbar.LENGTH_LONG).show()
+            ApplyDialog.newInstance(bankAddress, context)
+            this.hide()
         }
 
     }
