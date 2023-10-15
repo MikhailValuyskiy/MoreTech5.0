@@ -5,7 +5,7 @@
 ![Карта офисов](app/src/main/res/drawable/more.png)
 
 ## Презентация проекта 📚:
-[Презентация](https://drive.google.com/file/d/1k2ZUh7jXige7Z_vnuopLDM5irS4Oj1-_/view?usp=sharing)
+[Презентация](https://docs.google.com/presentation/d/1udXaKmAd1VcBymd7Stl-40qhBsJICpWVQ6fSk6LceRU/edit?usp=sharing)
 
 ## Приложение позволяет найти офис, посмотреть загруженность и решить проблемы пользователя:
 
