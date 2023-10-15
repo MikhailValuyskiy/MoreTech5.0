@@ -2,7 +2,7 @@
 Это проект, выполненный в рамках хакатона More.Tech 5.0. Команда Android Heroes
 
 ## Демонстрация проекта 📌:
-![Карта офисов](app/src/main/res/drawable/more_tech_demo.png)
+![Карта офисов](app/src/main/res/drawable/more_tech_demo2.png)
 
 ## Презентация проекта 📚:
 [Презентация](https://docs.google.com/presentation/d/1udXaKmAd1VcBymd7Stl-40qhBsJICpWVQ6fSk6LceRU/edit?usp=sharing)
