@@ -8,7 +8,7 @@
 [Презентация](https://docs.google.com/presentation/d/1udXaKmAd1VcBymd7Stl-40qhBsJICpWVQ6fSk6LceRU/edit?usp=sharing)
 
 ## Видео Демо 📌
-[Демо](https://drive.google.com/file/d/1WEsgw6kYsHXyD2nk_2apq_8M0_-2GM9m/view?usp=sharing)
+[Демо](https://drive.google.com/file/d/15zAHPUwCrX6SWycor1BJYMADAKnBp51r/view?usp=sharing)
 
 ## Приложение позволяет найти офис, посмотреть загруженность и решить проблемы пользователя:
 
