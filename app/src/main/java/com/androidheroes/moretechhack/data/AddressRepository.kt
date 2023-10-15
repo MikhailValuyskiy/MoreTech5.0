@@ -13,8 +13,10 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.740624, 37.590686),
-                District.CAO
-            ),
+                District.CAO,
+                services = setOf("Ипотека и кредиты", "Вклады", "Переводы и Платежи")
+
+        ),
             BankInfo(
                 2,
                 "Банк ВТБ",
@@ -22,7 +24,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.744948, 37.816188),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты", "Вклады", "Переводы и Платежи")
             ),
             BankInfo(
                 3,
@@ -31,7 +34,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.744948, 37.816188),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты", "Вклады", "Переводы и Платежи")
             ),
             BankInfo(
                 4,
@@ -40,7 +44,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.726046, 37.632592),
-                District.CAO
+                District.CAO,
+                services = setOf("Автокредиты")
             ),
             BankInfo(
                 5,
@@ -49,26 +54,29 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.744948, 37.816188),
-                District.CAO
+                District.CAO,
+                services = setOf("Автокредиты")
 
             ),
             BankInfo(
                 6,
-                "Банк ВТБ",
+                "Банк ВТБ Автокредиты",
                 "Ул. 1905 года, д. 8",
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.767089, 37.560233),
-                District.CAO
+                District.CAO,
+                services = setOf("Автокредиты")
             ),
             BankInfo(
                 7,
-                "Банк ВТБ",
+                "Банк ВТБ Автокредиты",
                 "Ул. Палиха, д. 14/33, стр. 1",
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.784597, 37.600783),
-                District.CAO
+                District.CAO,
+                services = setOf("Автокредиты")
             ),
             BankInfo(
                 8,
@@ -113,7 +121,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.781767, 37.643013),
-                District.CAO
+                District.CAO,
+                services = setOf("Автокредиты")
             ),
             BankInfo(
                 13,
@@ -122,7 +131,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.746907, 37.659748),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 14,
@@ -131,7 +141,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.738520, 37.657323),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 15,
@@ -140,7 +151,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.788252, 37.633769),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 16,
@@ -149,7 +161,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.742742, 37.590973),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 17,
@@ -158,7 +171,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.758590, 37.562227),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 18,
@@ -167,7 +181,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.788707, 37.637245),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 19,
@@ -176,7 +191,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.768603, 37.585170),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 20,
@@ -185,7 +201,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.740624, 37.590686),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 21,
@@ -194,7 +211,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.765073, 37.582799),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 22,
@@ -203,7 +221,8 @@ object AddressRepository {
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
                 Pair(55.746725, 37.632925),
-                District.CAO
+                District.CAO,
+                services = setOf("Ипотека и кредиты")
             ),
             BankInfo(
                 23,
@@ -389,7 +408,8 @@ data class BankInfo(
     // Число посетителей каждый час - массив из 10 чисел (9 часов работы офиса)
     var currentPeopleCount: List<Int> = listOf(50, 100, 150, 200, 250, 300, 250, 200, 150),
     var generalAvailability: Int = averagePeopleCount / managersCount,
-    var startTime:String = "10.00"
+    var startTime:String = "10.00",
+    var services:Set<String> = setOf("Ипотека и кредиты", "Дебетовые и Кредитные карты", "Автокредиты", "Вклады", "Переводы и Платежи")
 ) {
 
     // Получаем загрузку офиса для каждого часа

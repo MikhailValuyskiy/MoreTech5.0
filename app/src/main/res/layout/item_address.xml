@@ -71,7 +71,17 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:textSize="12sp"
-                tools:text="20 июня"
+                tools:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/material_margin_super_small"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="12sp"
                 tools:textColor="@color/black" />
 
         </LinearLayout>

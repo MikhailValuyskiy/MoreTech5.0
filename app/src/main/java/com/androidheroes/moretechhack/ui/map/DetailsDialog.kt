@@ -29,6 +29,8 @@ class ConfirmationDialog(
         contentView.rootView.findViewById<TextView>(R.id. bank_time).text =  Html.fromHtml("Режим работы: <b>${bankAddress.time}</b>")
         contentView.rootView.findViewById<TextView>(R.id. bank_phone).text = Html.fromHtml("Телефон: <b>${bankAddress.phone}</b>")
 
+        contentView.rootView.findViewById<TextView>(R.id.services).text ="Услуги: ${bankAddress.services.joinToString { it }}"
+
         contentView.rootView.findViewById<TextView>(R.id. bank_availability).text = Html.fromHtml("Загрузка: <b>${bankAddress.getAvailability(12).title}</b>")
 
         contentView.rootView.findViewById<MaterialButton>(R.id. que).setOnClickListener {

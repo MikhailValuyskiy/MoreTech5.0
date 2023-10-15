@@ -10,6 +10,7 @@ import com.androidheroes.moretechhack.data.AddressRepository
 import com.androidheroes.moretechhack.data.BankInfo
 import com.androidheroes.moretechhack.databinding.FragmentAddressesBinding
 import com.androidheroes.moretechhack.ui.common.afterTextChanged
+import com.google.android.material.snackbar.Snackbar
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
 
@@ -54,7 +55,20 @@ class AddressesFragment : Fragment() {
         fragmentAddressesBinding.addressesList.adapter = adapter.apply { addAll(listOf()) }
 
         fragmentAddressesBinding.addressSearchToolbar.filter_text_button.setOnClickListener {
-            FilterDialog.newInstance(requireContext())
+            FilterDialog.newInstance(requireContext()){
+                filter->
+          adapter.clear()
+                adapter.apply { addAll(
+                    AddressRepository.getBanks()
+                        .filter { it-> it.services.contains(filter) }
+                        .map {
+                            BankAddressContainer(it) { a ->
+                            }
+                        }
+
+                ) }
+
+            }
         }
 
         fragmentAddressesBinding.addressSearchToolbar.search_edit_text.afterTextChanged {

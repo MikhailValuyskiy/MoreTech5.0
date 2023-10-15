@@ -19,6 +19,8 @@ class BankAddressContainer(
         viewBinding.content.setOnClickListener {
             onClick.invoke(content)
         }
+
+        viewBinding.services.text = "Услуги: ${content.services.joinToString { it }}"
     }
 
     override fun initializeViewBinding(view: View): ItemAddressBinding {
