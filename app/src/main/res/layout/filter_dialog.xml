@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/background_bottom_dialog" />
+
+    <LinearLayout
+        android:id="@+id/checkbox_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:paddingStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bottom_sheet_heading"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/mortgage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ипотека и кредиты"/>
+
+        <CheckBox
+            android:id="@+id/credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дебетовые и Кредитные карты"/>
+
+        <CheckBox
+            android:id="@+id/auto_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Автокредиты"/>
+
+
+        <CheckBox
+            android:id="@+id/invest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вклады"/>
+
+        <CheckBox
+            android:id="@+id/payments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Переводы и Платежи"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#003082"
+            android:text="Применить"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

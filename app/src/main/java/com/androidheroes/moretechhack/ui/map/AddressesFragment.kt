@@ -53,6 +53,10 @@ class AddressesFragment : Fragment() {
         fragmentAddressesBinding.addressesList.layoutManager = LinearLayoutManager(context)
         fragmentAddressesBinding.addressesList.adapter = adapter.apply { addAll(listOf()) }
 
+        fragmentAddressesBinding.addressSearchToolbar.filter_text_button.setOnClickListener {
+            FilterDialog.newInstance(requireContext())
+        }
+
         fragmentAddressesBinding.addressSearchToolbar.search_edit_text.afterTextChanged {
 
             val searchTerm = it.toString()

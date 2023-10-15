@@ -19,7 +19,7 @@ class SearchBar @JvmOverloads constructor(
 
     var editText: EditText
     var search_edit_text: EditText
-    var delete_text_button: AppCompatImageView
+    var filter_text_button: AppCompatImageView
 
     private var hint: String = ""
     private var isCancelVisible: Boolean = true
@@ -28,7 +28,7 @@ class SearchBar @JvmOverloads constructor(
         val view = LayoutInflater.from(context).inflate(R.layout.search_toolbar, this)
         editText = view.findViewById(R.id.search_edit_text)
         search_edit_text = view.findViewById(R.id.search_edit_text)
-        delete_text_button = view.findViewById(R.id.delete_text_button)
+        filter_text_button = view.findViewById(R.id.filter_button)
 
         if (attrs != null) {
             context.obtainStyledAttributes(attrs, R.styleable.SearchBar).apply {
@@ -50,10 +50,16 @@ class SearchBar @JvmOverloads constructor(
     override fun onFinishInflate() {
         super.onFinishInflate()
         search_edit_text.hint = hint
-        delete_text_button.setOnClickListener {
-            search_edit_text.text.clear()
+        filter_text_button.setOnClickListener {
+
         }
-        delete_text_button.visibility = View.VISIBLE
+        filter_text_button.visibility = View.VISIBLE
+    }
+
+    fun setFilterClick(click:()->Unit){
+        filter_text_button.setOnClickListener {
+            click.invoke()
+        }
     }
 
     override fun onAttachedToWindow() {
