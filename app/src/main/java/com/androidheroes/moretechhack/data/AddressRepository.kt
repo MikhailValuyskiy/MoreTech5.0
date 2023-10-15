@@ -18,19 +18,19 @@ object AddressRepository {
             BankInfo(
                 2,
                 "Банк ВТБ",
-                "Токмаков пер., д. 8",
+                "Автозаводская ул., 6",
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
-                Pair(55.766385, 37.669208),
+                Pair(55.744948, 37.816188),
                 District.CAO
             ),
             BankInfo(
                 3,
                 "Банк ВТБ",
-                "Ул. Покровка, д. 39, стр. 3",
+                "ул. Бахрушина, 32, стр. 1",
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
-                Pair(55.762373, 37.651250),
+                Pair(55.744948, 37.816188),
                 District.CAO
             ),
             BankInfo(
@@ -45,12 +45,11 @@ object AddressRepository {
             BankInfo(
                 5,
                 "Банк ВТБ",
-                "Большой Могильцевский пер.,д. 4-6",
+                "Люблинская ул., 4, корп. 1",
                 "8 (800) 100-24-24",
                 "Открыто до 22:00",
-                Pair(55.743887, 37.589734),
-                District.CAO,
-                area = "Фортепиано"
+                Pair(55.744948, 37.816188),
+                District.CAO
 
             ),
             BankInfo(
@@ -389,7 +388,8 @@ data class BankInfo(
     var averagePeopleCount: Int = 100,
     // Число посетителей каждый час - массив из 10 чисел (9 часов работы офиса)
     var currentPeopleCount: List<Int> = listOf(50, 100, 150, 200, 250, 300, 250, 200, 150),
-    var generalAvailability: Int = averagePeopleCount / managersCount
+    var generalAvailability: Int = averagePeopleCount / managersCount,
+    var startTime:String = "10.00"
 ) {
 
     // Получаем загрузку офиса для каждого часа
